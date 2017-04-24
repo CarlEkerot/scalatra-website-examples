@@ -4,6 +4,7 @@ import javax.servlet.ServletContext
 
 class ScalatraBootstrap extends LifeCycle {
   override def init(context: ServletContext) {
-    context.mount(new ChatController, "/*")
+    context.mount(new ChatController, "/chat/*")
+    context.mount(new OtherController, "/other/*")
   }
 }
