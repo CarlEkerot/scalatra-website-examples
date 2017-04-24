@@ -9,7 +9,7 @@ object build extends Build {
   val Name = "Scalatra Atmosphere Embedded"
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.7"
-  val ScalatraVersion = "2.4.+"
+  val ScalatraVersion = "2.5.+"
   val jettyVersion = "9.1.5.v20140505"
 
   lazy val project = Project (
@@ -24,7 +24,7 @@ object build extends Build {
       resolvers += "Akka Repo" at "http://repo.akka.io/repository",
       resolvers += "Scalaz Bintray" at "http://dl.bintray.com/scalaz/releases",
       libraryDependencies ++= Seq(
-        "org.json4s"                  %% "json4s-jackson"      % "3.3.0",
+        "org.json4s"                  %% "json4s-jackson"      % "3.5.1",
         "org.scalatra"                %% "scalatra"            % ScalatraVersion,
         "org.scalatra"                %% "scalatra-scalate"    % ScalatraVersion,
         "org.scalatra"                %% "scalatra-specs2"     % ScalatraVersion   % "test",
